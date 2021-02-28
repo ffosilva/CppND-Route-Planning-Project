@@ -55,7 +55,12 @@ int main(int argc, const char **argv)
     // Declare floats `start_x`, `start_y`, `end_x`, and `end_y` and get
     // user input for these values using std::cin.
     float start_x, start_y, end_x, end_y;
-    std::cin >> start_x >> start_y >> end_x >> end_y;
+    
+    std::cout << "Enter the start point coordinates: ";
+    std::cin >> start_x >> start_y;
+    
+    std::cout << "Enter the end point coordinates: "; 
+    std::cin >> end_x >> end_y;
 
     // Build Model.
     RouteModel model{osm_data};
